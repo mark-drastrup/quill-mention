@@ -286,6 +286,7 @@ class Mention {
         li.innerHTML = this.options.renderItem(data[i], searchTerm);
         li.onmouseenter = this.onItemMouseEnter.bind(this);
         li.dataset.denotationChar = mentionChar;
+        li.dataset.email = "test@test.com";
         li.onclick = this.onItemClick.bind(this);
         this.mentionList.appendChild(
           attachDataValues(li, data[i], this.options.dataAttributes)
